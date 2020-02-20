@@ -1,27 +1,18 @@
 var myInput=prompt("Insert word");
-var arrays=myInput.split(" ");
+var arrays=myInput.split("");
 
-/*for(var x=0;x<arrays.length;x+=1){
-    if(arrays[x]===arrays.charAt[arrays.length-1]) {
-
-
-
-    }
-}*/
-
-
-var newArray=arrays.map(function(array){
-    if(typeof (array.charAt[array.length-1])=== "number"){
+arrays.forEach(function(array){
+    if(typeof array ===="number"){
         array=array+1;
-        alert("hi");
-        return array;
+        alert("h1");
+        //return array;
 
     }
     else{
-        
-        return array.concat("1");
+        arrays.push(1);
+        //return newArray;
     }
 
 });
 
-alert(newArray);
+alert(arrays);
